@@ -7,14 +7,14 @@ steps:
   build-step:
     #title: Build My Image #Display name for the step
     type: build
-    image-name: containers101/cf-example-vote
+    image-nameee: containers101/cf-example-vote
     tag: ${{CF_BRANCH}}
 
   push-to-registry:
     type: push
     #candidate: the image from the build step
-    candidate: ${{build-step}}
-    tag: ${{CF_BRANCH}}
+    candidateee: ${{build-step}}
+    tagggg: ${{CF_BRANCH}}
 
 
   deploy to ecs:
